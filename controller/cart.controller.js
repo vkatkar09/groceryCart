@@ -13,6 +13,7 @@
           $scope.cart = [];
           
           var findItemById = function(items, id) {
+              //finds item in the array by ID
             return _.find(items, function(item) {
               return item.id === id;
             });
@@ -32,6 +33,7 @@
           };
           
           $scope.getTotal = function() {
+              //loops over all the items and calculate the sum
             var total =  _.reduce($scope.cart, function(sum, item) {
               return sum + $scope.getCost(item);
             }, 0);
