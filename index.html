@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css"></link>
+<link rel="stylesheet" href="node_modules/angular-material/angular-material.css" />
+<script src="node_modules/angular/angular.js"></script>
+<script src="node_modules/angular-route/angular-route.js"></script>
+<script src="node_modules/angular-material/angular-material.js"></script>
+<script src="node_modules/angular-animate/angular-animate.js"></script>
+<script src="node_modules/angular-aria/angular-aria.js"></script>
+<script src="app.js"></script>
+<script src="controller/login.controller.js"></script>
+<script src="controller/registration.controller.js"></script>
+<script src="controller/home.controller.js"></script>
+<script src="controller/cart.controller.js"></script>
+<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.bootstrapvalidator/0.5.0/css/bootstrapValidator.min.css"></link>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+<body ng-app="myApp" style="background-color:#F0F0F0">
+
+<!-- <p><a href="#/!">Main</a></p>
+<a href="#!login">Login</a>
+<a href="#!registration">Register</a> -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">MyToDo</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+       -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#/home">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!registration">Register</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#!cart">Cart</a>
+            </li>
+          </ul>
+          <form style="float:right; padding-top: 15px" class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+          </form>
+        </div>
+      </nav>
+
+<div ng-view></div>
+
+</body>
+</html>
